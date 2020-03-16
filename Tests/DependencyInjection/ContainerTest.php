@@ -14,7 +14,7 @@ class ContainerTest extends TestCase
     {
         $container = new ContainerBuilder();
 
-        $container->setParameter('kernel.name', 'app');
+        $container->setParameter('kernel.container_class', 'My\App\Container');
         $container->setParameter('kernel.environment', 'test');
         $container->setParameter('kernel.debug', true);
         $container->setParameter('kernel.cache_dir', tempnam(sys_get_temp_dir(), "HautelookTemplatedUriBundle"));
